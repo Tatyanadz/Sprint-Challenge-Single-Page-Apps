@@ -25,7 +25,7 @@ export default function CharacterList() {
 
   return (
     <section className="character-list">
-      <Div>
+      <CharDiv>
         <Link to="/"><Button>Home</Button></Link>
         <SearchForm character={character} />
         {character.map(char => (
@@ -37,7 +37,7 @@ export default function CharacterList() {
             image={char.image}
           />
         ))}
-      </Div>
+      </CharDiv>
     </section>
   );
 }
@@ -45,4 +45,4 @@ export default function CharacterList() {
 const Button = styled.button
 
 
-const Div = styled.div
+const CharDiv = styled.div
