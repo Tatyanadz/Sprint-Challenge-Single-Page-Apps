@@ -18,7 +18,7 @@ export default function SearchForm(props) {
         <input
           id="name"
           onChange={handleChange}
-          placeholder="Search..."
+          placeholder="Search"
         />
       </form>
       {searchChar.map(character => (
